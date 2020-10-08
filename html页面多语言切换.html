@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语言切换</title>
+</head>
+<style>
+	.box{
+		display: flex;
+		justify-content: space-between;
+	}
+	ul li{
+		display: inline-block;
+		list-style: none;
+		padding: 10px;
+	}
+</style>
+<body style="display:none">
+
+<!-- 需要搭建服务器，才能运行 -->    
+
+<div class="box">
+	<div class="box-menu">
+		<ul class="ishow_ch">
+			<li>首页</li>
+			<li>关于我们</li>
+			<li>联系我们</li>
+		</ul>
+		<ul class="ishow_hw">
+			<li>중문</li>
+			<li>중문</li>
+			<li>중문</li>
+		</ul>
+		<ul class="ishow_en">
+			<li>home</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+	</div>
+	<ul>
+	    <li>
+	        <a href="javascript:;" id="change-ch"><span class="ishow_ch">中文</span><span class="ishow_hw">중문</span><span class="ishow_en">Chinese</span></a>
+	    </li> 
+	    <li>
+	        <a href="javascript:;" id="change-hw"><span class="ishow_ch">韩文</span><span class="ishow_hw">한글</span><span class="ishow_en">Korean</span></a>
+	    </li>
+	     <li>
+	        <a  href="javascript:;" id="change-en"><span class="ishow_ch">英文</span><span class="ishow_hw">영문</span><span class="ishow_en">English</span></a>
+	    </li>
+	</ul>
+</div>
+
+
+
+
+<script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!------------------- 语言切换逻辑实现 Start ------------------->
+<script>
+    
+//避免同时加载多个语言    
+$('body').fadeIn(500); 
+
+$('#change-ch').click('on',function(){
+    $.cookie('switch', '0', { expires: 30 });
+    location.reload();
+})
+
+$('#change-en').click('on',function(){
+    $.cookie('switch', '1', { expires: 30 });
+    location.reload();
+})
+
+$('#change-hw').click('on',function(){
+    $.cookie('switch', '2', { expires: 30 });
+    location.reload();
+})
+
+$(function(){
+    //默认显示英文
+    $('.ishow_ch').hide();
+    $('.ishow_hw').hide();
+    $('.ishow_en').show();
+    //switch === 0 显示中文
+    if($.cookie('switch') == 0){
+        $('.ishow_en').hide();
+        $('.ishow_hw').hide();
+        $('.ishow_ch').show();
+    //switch === 1 显示英文
+    }else if($.cookie('switch') == 1){
+        $('.ishow_ch').hide();
+        $('.ishow_hw').hide();
+        $('.ishow_en').show();
+    //switch === 2 显示韩文    
+    }else if($.cookie('switch') == 2){
+        $('.ishow_ch').hide();
+        $('.ishow_en').hide();
+        $('.ishow_hw').show();
+    }
+
+})
+
+</script>
+<!----------------- 语言切换逻辑实现 End ------------------------->
+
+</body>
+</html>

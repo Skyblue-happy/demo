@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>new</title>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<!-- 
+		 拆分页面、静态。动态
+		 -->
+	<style>
+		div{
+			display: inline-block;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<div>
+			<img src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=cellular-automata&cells=10">
+			<img src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=cellular-automata&cells=50">
+		</div>
+		<div>
+			<img src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=triangles&gap=100">
+			<img src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=triangles&gap=30">
+		</div>
+		<ul>
+			<li onclick="hide(event)">苹果</li>
+			<li onclick="hide(event)">草莓</li>
+			<li onclick="hide(event)">橘子</li>
+		</ul>
+	</div>
+</body>
+<script>
+	function foo(i) {
+		if (i < 0)
+			return;
+		console.log('begin:' + i);
+		foo(i - 1);
+		console.log('end:' + i);
+	}
+	foo(3);
+
+	var numbers = [4, 2, 5, 1, 3];
+	numbers.sort(function (a, b) {
+		return a - b;
+	});
+	console.log(numbers);
+		// const http = require('http');
+
+		// http.createServer((request, response) => {
+		// 	response.writeHead(200, {
+		// 		'Content-Type': 'text/plain'
+		// 	});
+		// 	response.end('Hello World!');
+		// }).listen(8000);
+
+		// console.log('Server running at http://127.0.0.1:8000/');
+		// function ovo(n) {
+		// 	var i, product = 1;
+		// 	for (i = 2; i <= n; i++) {
+		// 		product *= i
+		// 	}
+		// 	return product
+		// }
+		// console.log(ovo(5))
+
+		function hide(event) {
+			console.log('event', event.target)
+			event.target.style.visibility = "hidden"
+		}
+		// console.log("caf\u00e9")
+		// var arr = [
+		// 	{
+		// 		id:1,
+		// 		msg:{name:a}
+		// 	},
+		// 	{
+		// 		id:2,
+		// 		msg:{name:b}
+		// 	}
+		// ]
+		// var obj = {}
+		// obj.msg = {
+		// 	oneInfo:'1:233',
+		// 	twoInfo:'2:344'
+		// }
+		// console.log('obj',obj)
+
+		// obj.msg.forEach(item=>{
+		// 	item.oneInfo = one
+		// 	item.twoInfo = two
+		// })
+
+		// ES6
+
+		// var tmp = 'haha';
+
+		// function f() {
+
+		// 	console.log('tmp', tmp);
+		// 	if (false) {
+		// 		console.log('false')
+		// 		var tmp = 'hello world';
+		// 	}
+		// 	if (false) {
+		// 		console.log('false', false)
+		// 	}
+		// 	if (true) {
+		// 		console.log('true', true)
+		// 	}
+		// }
+
+		// f();
+
+		// var s = 'hello';
+
+		// for (var i = 0; i < s.length; i++) {
+		// 	// console.log('s[i]',s[i]);
+		// }
+
+		// console.log('i', i); // 5
+
+		// var arr = [1, 2, 3.4, 5]
+		// for (var k = 0; k < arr.length; k++) {
+
+		// }
+		// console.log('k', k)
+
+		// function f1() {
+		// 	let n = 5;
+		// 	if (true) {
+		// 		let n = 10;
+		// 		console.log('true n', n)
+		// 	}
+		// 	if (false) {
+		// 		let n = 5;
+		// 		console.log('false n', n)
+		// 	}
+		// 	console.log('f1 n', n); // 5
+		// }
+		// f1()
+
+		// function f23(){
+		// 	console.log('ovo',ovo)
+		// 	var ovo = 'yoyo'
+		// }
+		// f23()
+
+		// console.log('akb',akb)
+		// var akb = '233'
+
+		// const map = new Map();
+		// map.set('first', 'hello');
+		// map.set('second', 'world');
+
+		// for (let [key, value] of map) {
+		// 	console.log(key + " is " + value);
+		// }
+
+		// console.log('字符串的扩展', "\u{20BB7}")
+
+		// console.log('反斜杠', "-U+005C", "\\", "\u005c")
+
+		// console.log(JSON.stringify('\u{D834}'), JSON.stringify('\uDF06\uD834'))
+
+		// function Person() {
+		// 	var that = this;
+		// 	that.age = 0;
+		// 	// this.age = 0;
+
+		// 	// setInterval(function growUp() {
+		// 	//   this.age++;
+		// 	// console.log('定时器里age', this.age)
+		// 	// }, 1000);
+		// 	setInterval(() => {
+		// 		that.age++;  //此处的that指向Person实例
+		// 		// console.log('定时器里age', this.age)
+		// 	}, 1000);
+		// }
+
+		// var p = new Person();
+
+		// var adder = {
+		//   base : 1,
+
+		//   add : function(a) {
+		//     var f = v => v + this.base;
+		//     return f(a);
+		//   },
+
+		//   addThruCall: function(a) {
+		//     var f = v => v + this.base;
+		//     var b = {
+		//       base : 2
+		//     };
+
+		//     return f.call(b, a);
+		//   }
+		// };
+
+		// console.log(adder.add(1));         // 输出 2
+		// console.log(adder.addThruCall(1)); // 仍然输出 2（而不是3 ——译者注）
+
+		// var obj = {
+		//   ii: 10,
+		//   b: () => console.log('b this.ii',this.ii, 'b this',this),
+		//   c: function() {
+		//     console.log('c', this.ii, this)
+		//   }
+		// }
+		// obj.b(); 
+		// obj.c(); 
+
+		// var simple = a => a > 15 ? 15 : a; 
+		// simple(16); // 15
+		// simple(10); // 10
+		// console.log('sinple(16)',simple(16))
+		// console.log('sinple(15)',simple(15))
+
+		// console.log('new Date()',new Date())
+
+		// function ovo1(){
+		// 	console.log('ovo1')
+		// }
+
+		// function close(w){
+		// 	var a = 2;
+		// 	return function ovo1(w){
+		// 		return a+w
+		// 	}
+		// }
+		// var v = close();
+		// console.log(v(10))
+
+		// 递归 多层嵌套函数
+		// function A(x) {
+		// 	function B(y) {
+		// 		function C(z) {
+		// 			console.log('x + y + z =', x + y + z);
+		// 		}
+		// 		C(3);
+		// 	}
+		// 	B(2);
+		// }
+		// A(1); // logs 6 (1 + 2 + 3)
+
+		// // var fact = (x) => ( x==0 ?  1 : x*fact(x-1) ); //fact()函数形成了递归,如果不加的话改方法就会只执行一次
+		// var fact = (x) => (x == 0 ? 1 : x * (x - 1));
+		// console.log('fact()', fact(5))
+
+		// ES6 模板字符串
+		// 	console.log(`In JavaScript '\n' is a line-feed.`)
+		// 	console.log(`hello,\nworld`)
+		// 	console.log(`In JavaScript this is
+		// not legal.`)
+
+		// 	let name = "Bob",
+		// 		time = "today";
+		// 	console.log(`Hello ${name}, how are you ${time}?`)
+
+		// 	// 模板编译
+		// 	let template = `
+		// 	<ul>
+		// 	  <% for(let i=0; i < data.supplies.length; i++) { %>
+		// 	    <li><%= data.supplies[i] %></li>
+		// 	  <% } %>
+		// 	</ul>
+		// 	`;
+		// 	console.log('template',template,'----------------')
+
+		// 	let a = 5;
+		// 	let b = 10;
+
+		// 	function tag(s, v1, v2) {
+		// 	  console.log(s[0]);
+		// 	  console.log(s[1]);
+		// 	  console.log(s[2]);
+		// 	  console.log(v1);
+		// 	  console.log(v2);
+
+		// 	  return "OK";
+		// 	}
+
+		// 	tag`Hello ${ a + b } world ${ a * b}`;
+
+		// map set get 
+		// var maps = new Map()
+		// maps.set(['a'],233)
+		// console.log('maps',maps)
+		// console.log('get maps',maps.get(['a']))
+
+		// console.log('isNaN()',isNaN(1))
+
+		// var arr = [
+		//   { id: 15 },
+		//   { id: -1 },
+		//   // { id: 0 },
+		//   { id: 3 },
+		//   { id: 12.2 },
+		//   { },
+		//   { id: null },
+		//   { id: NaN },
+		//   { id: 'undefined' }
+		// ];
+
+		// var invalidEntries = 0;
+
+		// function isNumber(obj) {
+		//   return obj !== undefined && typeof(obj) === 'number' && !isNaN(obj);
+		// }
+
+		// function filterByID(item) {
+		//   if (isNumber(item.id) && item.id == 0) {
+		//     return true;
+		//   } 
+		//   invalidEntries++;
+
+		//   // return false; 
+		// }
+
+		// var arrByID = arr.filter(filterByID);
+
+		// console.log('Filtered Array\n', arrByID); 
+
+		// // filter()
+		// function f(element){
+		// 	return element>=4
+		// }
+		// var farr = [1,2,5,6,7,8].filter(f)
+		// console.log('farr',farr)
+
+		// if(element>=10){
+		// 	return true
+		// }
+
+		// // promise
+		// var login = new Promise(function(resolve,reject){
+		// 	var xx = function(){}
+		// 	return login
+		// })
+		// xx().then(function(){
+		// 	console.log('success')
+		// },function(error){
+		// 	console.log('error')
+		// })
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.main-botton-box input+label {
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: #969695;
+				font-size: 18px;
+				font-family: "HL";
+				background-color: #F4F4F4;
+				float: left;
+				border-radius: 4px;
+				border: 0;
+				margin-right: 10px;
+				cursor: pointer;
+				box-sizing: border-box;
+			}
+
+			.main-botton-box input:checked+label {
+				background-color: #21A3A3;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-botton-box">
+			<input type="radio" name="fruit" style="display:none;" id="orange" checked>
+			<label for="orange">orange</label>
+			<input type="radio" name="fruit" style="display:none;" id="apple">
+			<label for="apple">apple</label>
+		</div>
+	</body>
+</html>
