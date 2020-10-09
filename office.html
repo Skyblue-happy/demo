@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>office demo</title>
+		<style>
+			body {
+				background-color: #789BC9;
+			}
+			/* 自定义html标签 */
+			page {
+			    display: block;
+			    height: 98vh;
+			    width: 69.3vh;
+			    margin: 1vh auto;
+			    padding: 12vh;
+			    border: 1px solid #646464;
+			    box-shadow: 0 0 15px rgba(0,0,0,.75);
+			    box-sizing: border-box;
+	/* 		    background: url(office/bl.png) no-repeat 8vh 88vh,
+			                url(office/br.png) no-repeat 59vh 88vh,
+			                url(office/tl.png) no-repeat 8vh 8vh,
+			                url(office/tr.png) no-repeat 59vh 8vh; */
+			    background-color: white;
+			    position: relative;
+			}
+			page:after {
+			    content: attr(data-page);
+			    color: graytext;
+			    font-size: 12px;
+			    text-align: center;
+			    bottom: 4vh;
+			    position: absolute;
+			    left: 10vh;
+			    right: 10vh;
+			}
+		</style>
+	</head>
+	<body>
+		<page>
+			<p>所有单位值都是使用的vh单位,一屏正好一页。</p>
+			<p>vw：览器内部宽度大小(window.innerWidth）</p>
+		</page>
+		<page></page>
+		<page></page>
+	</body>
+	<script>
+		var elePages = document.querySelectorAll("page"), lenPage = elePages.length;
+		for (var i=0; i<lenPage; i+=1) {
+		    elePages[i].setAttribute("data-page", "第 "+ (i+1) +" 页，共 "+ lenPage +" 页");    
+		} 
+	</script>
+</html>
