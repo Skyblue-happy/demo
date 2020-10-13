@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<style>
+			.box dd{
+				padding: 10px 0;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<dl class="box">
+				<dt><b>商品简介</b></dt>
+				<dd>书名：《小红书》</dd>
+				<dd>价格：￥99.99</dd>
+				<dd><button id="payBtn">点击支付</button></dd>
+			</dl>
+		</div>
+		<script>
+			let payBtn = document.querySelector('#payBtn')
+			payBtn.addEventListener('click',function(){
+				let result = confirm("确定支付吗")
+				if(result){
+					console.log('确定支付')
+					window.location = 'success.html'
+				}else{
+					console.log('取消支付')
+				}
+			})
+
+			console.log(0.5+0.1 == 0.6); // true
+			console.log(0.2+0.1 == 0.3); //false
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>success</title>
+		<style>
+			.box{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100vw;
+				height: 100vh;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>
+				<img src="images/success.png" >
+				<p>支付成功</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function move() {
+			  var answer=confirm("是否返回主页？")
+			  if(answer) {
+			    window.location='index.html'
+			  }
+			}
+			setTimeout(move,2000)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<style>
+			#text{
+				width: 200px;
+				font-size: 3em;
+				text-transform: uppercase;
+			}
+			#text>span{
+				display: inline-block;
+			}
+			.color{
+				
+				animation: colorChange 1s 2 linear alternate;
+			}
+			@keyframes colorChange{
+				from{
+					color: #5352ed;
+					transform: scale(2);
+				}
+				to{
+					color: #90EE90;
+					transform: scale(1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="text">hello,world</div>
+		<script>
+			let text = document.querySelector('#text')
+			console.log([...text.textContent]);
+			[...text.textContent].reduce(function(pre,value,index){
+				pre == index && (text.innerHTML = '') // 刚开始的时候默认为空
+				let span = document.createElement('span')
+				span.innerHTML = value
+				text.appendChild(span)
+				span.addEventListener('mouseover',function(){
+					this.classList.add('color')
+				})
+				span.addEventListener('animationend',function(){ // 动画结束删除动画类名，否则影响下次动画
+					this.classList.remove('color')
+				})
+			},0)
+		</script>
+	</body>
+</html>

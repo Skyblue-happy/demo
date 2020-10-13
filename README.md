@@ -10,7 +10,7 @@
 
 4、多语言切换
 	<br>
-		4.1、使用js实现：[预览地址](https://skyblue-happy.github.io/demo/html%E9%A1%B5%E9%9D%A2%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%88%87%E6%8D%A2.html)
+		4.1、使用js实现：
 	<br>
 		4.2、在html中使用i18n实现：[预览地址](https://skyblue-happy.github.io/demo/html%E9%A1%B5%E9%9D%A2%E4%BD%BF%E7%94%A8i18n.html)
 	<br>
@@ -18,7 +18,8 @@
 		
 5、此时此刻
 [预览地址](https://skyblue-happy.github.io/demo/%E6%AD%A4%E6%97%B6%E6%AD%A4%E5%88%BB/index.html#/time)
-	
+
+6、模拟office页面：[预览地址](https://skyblue-happy.github.io/demo/office.html)	
 
 
 
