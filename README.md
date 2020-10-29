@@ -3,7 +3,7 @@
 [预览地址](https://skyblue-happy.github.io/html-demo/%E8%87%AA%E5%AE%9A%E4%B9%89input%E5%92%8Clabel.html)
 
 2、有意思的img标签 
-[预览地址](https://skyblue-happy.github.io/demo/confession/index.html#/section-1/page-2)
+[预览地址](https://skyblue-happy.github.io/demo/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84img%E6%A0%87%E7%AD%BE.html)
 
 3、告白
 [预览地址](https://skyblue-happy.github.io/demo/confession/index.html)
@@ -16,4 +16,6 @@
 6、模拟office页面：[预览地址](https://skyblue-happy.github.io/demo/office.html)	
 
 7、好看的文字动画：[预览地址](https://skyblue-happy.github.io/demo/%E5%A5%BD%E7%9C%8B%E7%9A%84%E6%96%87%E5%AD%97%E5%8A%A8%E7%94%BB.html)
+
+8、浏览器全屏时钟：[预览地址](https://skyblue-happy.github.io/demo/clock.html)
 
