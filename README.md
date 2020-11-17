@@ -19,3 +19,5 @@
 
 8、浏览器全屏时钟：[预览地址](https://skyblue-happy.github.io/demo/clock.html)
 
+8、js代理实现双向绑定：[预览地址](https://skyblue-happy.github.io/demo/c双向绑定.html)
+
