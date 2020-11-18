@@ -21,3 +21,5 @@
 
 8、js代理实现双向绑定：[预览地址](https://skyblue-happy.github.io/demo/双向绑定.html)
 
+8、js使用代理完成自定义验证组件：[预览地址](https://skyblue-happy.github.io/demo/自定义验证.html)
+

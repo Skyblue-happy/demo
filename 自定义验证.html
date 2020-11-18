@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS使用代理完成自定义验证组件</title>
+		<style>
+			.error{
+				outline:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h5>2020-11-18 周三</h5>
+			<p>JS使用代理完成自定义验证组件</p>
+			<input type="text" validate rule="max:12,min:3">
+			<input type="text" validate rule="max:3,isNumber">
+		</div>
+		<script>
+			'use strict'
+			// 37 表单验证组件的代理工厂
+			// 创建一个类 Validate，提供功能和验证
+			class Validate{
+				max(value,len){
+					return value.length <= len;
+				}
+				min(value,len){
+					return value.length >= len;
+				}
+				isNumber(value){
+					return /^\d+$/.test(value); // 是数字就返回真
+				}
+			}
+			let validate = new Validate();
+			console.log(validate.isNumber(123));
+			
+			// 代理工厂、验证
+			function ProxyFactory(target){
+				// 基本工作：触发表单的时候，让代理开始工作
+				return new Proxy(target,{
+					get(target,key){
+						return target[key]
+					},
+					set(target,key,el){
+						// 获取表单规则
+						let rule = el.getAttribute('rule');
+						let validate = new Validate();
+						let state = rule.split(',').every(item=>{
+							let info = item.split(':');
+							return validate[info[0]](el.value,info[1])
+						})
+						console.log('state',state);
+						el.classList[state?'remove':'add']('error')
+						return true
+					}
+				})
+			}
+			let proxy = ProxyFactory(document.querySelectorAll("[validate]"));
+			proxy.forEach((item,i)=>{
+				item.addEventListener('keyup',function(){
+					proxy[i] = this; // 本身没什么作用，主要是为了触发代理函数中的set方法
+				})
+			})
+		</script>
+	</body>
+</html>
