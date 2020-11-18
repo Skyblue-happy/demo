@@ -7,14 +7,20 @@
 			.error{
 				outline:1px solid red;
 			}
+			input{
+				height: 2em;
+				padding: 0 20px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="box">
 			<h5>2020-11-18 周三</h5>
 			<p>JS使用代理完成自定义验证组件</p>
-			<input type="text" validate rule="max:12,min:3">
-			<input type="text" validate rule="max:3,isNumber">
+			<hr>
+			<input type="text" validate rule="max:12,min:3" placeholder="max:12,min:3">
+			<br><br>
+			<input type="text" validate rule="max:3,isNumber" placeholder="max:3,isNumber">
 		</div>
 		<script>
 			'use strict'
