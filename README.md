@@ -23,3 +23,4 @@
 
 8、js使用代理完成自定义验证组件：[预览地址](https://skyblue-happy.github.io/demo/自定义验证.html)
 
+9、使用react做了一个demo，运用到父子组件传值，CSS3动画，ajax等：[预览地址](https://skyblue-happy.github.io/demo/react-demo/index.html)
