@@ -19,7 +19,9 @@
 
 8、浏览器全屏时钟：[预览地址](https://skyblue-happy.github.io/demo/clock.html)
 
-8、js代理实现双向绑定：[预览地址](https://skyblue-happy.github.io/demo/双向绑定.html)
+9、js代理实现双向绑定：[预览地址](https://skyblue-happy.github.io/demo/双向绑定.html)
 
-8、js使用代理完成自定义验证组件：[预览地址](https://skyblue-happy.github.io/demo/自定义验证.html)
+10、js使用代理完成自定义验证组件：[预览地址](https://skyblue-happy.github.io/demo/自定义验证.html)
+
+11、CSS3动画demo，笔记总结：[预览地址](https://skyblue-happy.github.io/demo/CSS3动画demo/index.html)
 
