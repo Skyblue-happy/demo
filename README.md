@@ -25,3 +25,5 @@
 
 11、CSS3动画demo，笔记总结：[预览地址](https://skyblue-happy.github.io/demo/CSS3动画demo/index.html)
 
+12、想试试写写好看的界面，和自己喜欢听的歌结合起来，总的来说，还是挺满意的，(#^.^#)[预览地址](https://skyblue-happy.github.io/demo/音乐解药01/index.html)
+
