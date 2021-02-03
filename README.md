@@ -25,6 +25,8 @@
 
 11、CSS3动画demo，笔记总结：[预览地址](https://skyblue-happy.github.io/demo/CSS3动画demo/index.html)
 
-12、想试试写写好看的界面，和自己喜欢听的歌结合起来，总的来说，还是挺满意的，(#^.^#)、[预览地址](https://skyblue-happy.github.io/demo/音乐解药01/index.html)
+12、想试试写写好看的界面，和自己喜欢听的歌结合起来，总的来说，还是挺满意的，(#^.^#)，[预览地址](https://skyblue-happy.github.io/demo/音乐解药01/index.html)
 
 13、杨辉三角demo，可以输入不同的值生成相应的图案，此处主要是for循环的练习，[预览地址](https://skyblue-happy.github.io/demo/triangle.html)
+
+14、html简单布局，[预览地址](https://skyblue-happy.github.io/demo/html简单布局.html)
