@@ -142,10 +142,17 @@ ul,li{
 .footer-list{
 	display: flex;
 	justify-content: space-between;
+	color: gray;
 }
 .footer-item{
 	width: 28%;
 	height: 200px;
-	background-color: #fff;
+}
+.footer-item a{
+	color: gray;
+	text-decoration: none;
+}
+.footer-item a:hover{
+	color: #5F9EA0;
 }
 /* footer end */
