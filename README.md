@@ -30,3 +30,5 @@
 13、杨辉三角demo，可以输入不同的值生成相应的图案，此处主要是for循环的练习，[预览地址](https://skyblue-happy.github.io/demo/triangle.html)
 
 14、html简单布局，[预览地址](https://skyblue-happy.github.io/demo/html简单布局/index.html)
+
+15、bootstrap优质项目列表，[预览地址](https://skyblue-happy.github.io/demo/ bootstrap-project-list.html)  
