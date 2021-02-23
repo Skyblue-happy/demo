@@ -31,4 +31,4 @@
 
 14、html简单布局，[预览地址](https://skyblue-happy.github.io/demo/html简单布局/index.html)
 
-15、bootstrap优质项目列表，[预览地址](https://skyblue-happy.github.io/demo/ bootstrap-project-list.html)  
+15、bootstrap优质项目列表，[预览地址](https://skyblue-happy.github.io/demo/bootstrap-project-list.html)
